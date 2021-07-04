@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using OpenCvSharp;
 using System.Diagnostics;
+using System.Drawing.Imaging;
 
 // https://yc0345.tistory.com/222 를 보고 만들었습니다. 구글링 최고. 사랑해요.
 
@@ -56,7 +57,6 @@ namespace TestMacro1
             using (Mat ScreenMat = OpenCvSharp.Extensions.BitmapConverter.ToMat(screen_img)) //스크린 이미지 선언
             using (Mat FindMat = OpenCvSharp.Extensions.BitmapConverter.ToMat(find_img)) //찾을 이미지 선언
             using (Mat res = ScreenMat.MatchTemplate(FindMat, TemplateMatchModes.CCoeffNormed)) //스크린 이미지에서 FindMat 이미지를 찾아라
-                // 윗 줄에서 OpenCvSharp.OpenCVException 오류 발생
             {
                 double minval, maxval = 0; //찾은 이미지의 유사도를 담을 더블형 최대 최소 값을 선언합니다.
                 OpenCvSharp.Point minloc, maxloc; //찾은 이미지의 위치를 담을 포인트형을 선업합니다.

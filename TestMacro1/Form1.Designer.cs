@@ -59,7 +59,7 @@ namespace TestMacro1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(118, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(600, 900);
+            this.pictureBox1.Size = new System.Drawing.Size(540, 960);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -68,7 +68,7 @@ namespace TestMacro1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(724, 921);
+            this.ClientSize = new System.Drawing.Size(664, 981);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
