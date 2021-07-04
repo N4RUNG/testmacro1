@@ -86,6 +86,7 @@ namespace TestMacro1
                 Graphics Graphicsdata = Graphics.FromHwnd(findwindow); // 찾은 플레이어를 바탕으로 Graphics 정보를 가져옵니다.
                 Rectangle rect = Rectangle.Round(Graphicsdata.VisibleClipBounds); // 찾은 플레이어 창 크기 및 위치를 가져옵니다. 
                 Bitmap bmp = new Bitmap(rect.Width, rect.Height); // 플레이어 창 크기 만큼의 비트맵을 선언해줍니다.
+                // 매개 변수 값 오류
                 using (Graphics g = Graphics.FromImage(bmp)) // 비트맵을 바탕으로 그래픽스 함수로 선언해줍니다.
                 {
                     IntPtr hdc = g.GetHdc(); // 찾은 플레이어의 크기만큼 화면을 캡쳐합니다.
